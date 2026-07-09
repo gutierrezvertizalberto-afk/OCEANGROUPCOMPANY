@@ -4,67 +4,99 @@
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>OCEAN GROUP COMPANY S.A.C. | Exportación y Logística Internacional</title>
+<title>OCEAN GROUP COMPANY S.A.C. | Global Seafood Export</title>
 
-<meta name="description" content="OCEAN GROUP COMPANY S.A.C. Exportación de productos hidrobiológicos, logística internacional y comercio exterior desde Perú.">
+<meta name="description" content="Ocean Group Company S.A.C. Exportación de productos hidrobiológicos peruanos, logística internacional y comercio exterior.">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 
 <style>
 
+
+/* =====================
+   CONFIGURACIÓN GENERAL
+===================== */
+
+
 *{
+
 margin:0;
 padding:0;
 box-sizing:border-box;
 font-family:'Poppins',sans-serif;
+
 }
+
 
 html{
+
 scroll-behavior:smooth;
+
 }
+
 
 body{
-background:#f4f9fc;
-color:#333;
-overflow-x:hidden;
-}
 
+background:#f5faff;
 
-/* HEADER */
-
-header{
-
-position:fixed;
-top:0;
-left:0;
-width:100%;
-
-background:rgba(0,75,120,.92);
-
-backdrop-filter:blur(10px);
-
-z-index:999;
+color:#1b1b1b;
 
 }
+
 
 
 .container{
 
 width:90%;
+
 max-width:1300px;
+
 margin:auto;
 
 }
 
 
+
+/* =====================
+       HEADER
+===================== */
+
+
+header{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+background:rgba(0,43,75,.92);
+
+backdrop-filter:blur(12px);
+
+z-index:1000;
+
+}
+
+
+
 .navbar{
 
 display:flex;
-justify-content:space-between;
+
 align-items:center;
+
+justify-content:space-between;
 
 padding:15px 0;
 
@@ -72,12 +104,12 @@ padding:15px 0;
 
 
 
-/* LOGO */
-
 .logo{
 
 display:flex;
+
 align-items:center;
+
 gap:15px;
 
 color:white;
@@ -87,13 +119,12 @@ font-weight:700;
 }
 
 
+
 .logo img{
 
-width:120px;
+width:115px;
 
 height:auto;
-
-object-fit:contain;
 
 }
 
@@ -101,24 +132,22 @@ object-fit:contain;
 
 .logo span{
 
-font-size:20px;
-
-letter-spacing:.5px;
+font-size:19px;
 
 }
 
-
-
-/* MENU */
 
 
 .menu{
 
 display:flex;
+
 align-items:center;
+
 gap:25px;
 
 }
+
 
 
 .menu a{
@@ -126,6 +155,8 @@ gap:25px;
 color:white;
 
 text-decoration:none;
+
+font-size:15px;
 
 font-weight:500;
 
@@ -136,12 +167,13 @@ transition:.3s;
 
 .menu a:hover{
 
-color:#90e0ef;
+color:#48cae4;
 
 }
 
 
-.language-select{
+
+.lang{
 
 padding:8px;
 
@@ -153,7 +185,11 @@ border:none;
 
 
 
-/* HERO */
+
+
+/* =====================
+        HERO
+===================== */
 
 
 .hero{
@@ -168,27 +204,25 @@ justify-content:center;
 
 text-align:center;
 
-padding:20px;
+color:white;
 
 
 background:
 
 linear-gradient(
 
-rgba(0,90,140,.55),
+rgba(0,55,90,.65),
 
-rgba(0,90,140,.55)
+rgba(0,55,90,.65)
 
 ),
 
-url('https://images.unsplash.com/photo-1494412651409-8963ce7935a7?auto=format&fit=crop&w=1800&q=80');
+url("images/barco.jpg");
 
 
 background-size:cover;
 
 background-position:center;
-
-color:white;
 
 }
 
@@ -196,9 +230,7 @@ color:white;
 
 .hero-content{
 
-max-width:1000px;
-
-animation:fadeIn 1.5s ease;
+max-width:950px;
 
 }
 
@@ -208,15 +240,17 @@ animation:fadeIn 1.5s ease;
 
 font-size:70px;
 
-line-height:1.2;
+font-weight:800;
 
-margin-bottom:20px;
+line-height:1.15;
 
 }
 
 
 
 .hero p{
+
+margin-top:25px;
 
 font-size:23px;
 
@@ -226,23 +260,31 @@ line-height:1.7;
 
 
 
+.buttons{
+
+margin-top:35px;
+
+}
+
+
+
 .btn{
 
 display:inline-block;
 
-margin-top:30px;
-
-background:#00a6d6;
-
-color:white;
-
-padding:16px 38px;
+padding:15px 35px;
 
 border-radius:40px;
+
+background:#00b4d8;
+
+color:white;
 
 text-decoration:none;
 
 font-weight:600;
+
+margin:10px;
 
 transition:.3s;
 
@@ -252,15 +294,27 @@ transition:.3s;
 
 .btn:hover{
 
-transform:translateY(-5px);
-
 background:#0077b6;
+
+transform:translateY(-5px);
 
 }
 
 
 
-/* SECCIONES */
+.btn-outline{
+
+background:transparent;
+
+border:2px solid white;
+
+}
+
+
+
+/* =====================
+      SECCIONES
+===================== */
 
 
 .section{
@@ -271,13 +325,13 @@ padding:100px 0;
 
 
 
-.section-title{
+.title{
 
 text-align:center;
 
-font-size:42px;
+font-size:40px;
 
-color:#005b8f;
+color:#003b5c;
 
 margin-bottom:50px;
 
@@ -285,16 +339,36 @@ margin-bottom:50px;
 
 
 
-/* SERVICIOS */
+.subtitle{
+
+text-align:center;
+
+max-width:900px;
+
+margin:auto;
+
+font-size:18px;
+
+line-height:1.8;
+
+}
 
 
-.services{
+
+/* =====================
+      TARJETAS
+===================== */
+
+
+.grid{
 
 display:grid;
 
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+grid-template-columns:
 
-gap:25px;
+repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
 
 }
 
@@ -304,11 +378,13 @@ gap:25px;
 
 background:white;
 
-padding:30px;
+padding:35px;
 
-border-radius:18px;
+border-radius:20px;
 
-box-shadow:0 8px 25px rgba(0,0,0,.08);
+box-shadow:
+
+0 10px 30px rgba(0,0,0,.08);
 
 transition:.3s;
 
@@ -318,7 +394,7 @@ transition:.3s;
 
 .card:hover{
 
-transform:translateY(-8px);
+transform:translateY(-10px);
 
 }
 
@@ -334,187 +410,104 @@ margin-bottom:15px;
 
 
 
-.card p{
-
-line-height:1.7;
-
-}
-
-.stats{
-
-background:#0077b6;
-
-color:white;
-
-}
+/* =====================
+      BANDERAS
+===================== */
 
 
-.stats-grid{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-
-gap:20px;
+.flag-card{
 
 text-align:center;
 
 }
 
 
-.stat-number{
 
-font-size:50px;
+.flag-card img{
 
-font-weight:700;
-
-}
-
-
-
-.gallery{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-
-gap:20px;
-
-}
-
-
-
-.gallery img{
-
-width:100%;
-
-height:260px;
-
-object-fit:cover;
-
-border-radius:15px;
-
-}
-
-
-
-.contact{
-
-display:grid;
-
-grid-template-columns:1fr 1fr;
-
-gap:40px;
-
-}
-
-
-
-.contact-form input,
-
-.contact-form textarea{
-
-width:100%;
-
-padding:15px;
+width:70px;
 
 margin-bottom:15px;
 
-border:1px solid #ccc;
+}
 
-border-radius:8px;
+
+
+/* =====================
+       MAPA
+===================== */
+
+
+.map-container{
+
+text-align:center;
 
 }
 
 
 
-.contact-form button{
+.map-container img{
 
-background:#0077b6;
+width:100%;
+
+max-width:900px;
+
+}
+
+
+
+/* =====================
+       FOOTER
+===================== */
+
+
+footer{
+
+background:#002b4b;
 
 color:white;
 
-padding:15px 30px;
+text-align:center;
 
-border:none;
-
-border-radius:8px;
-
-cursor:pointer;
+padding:35px;
 
 }
 
+
+
+/* WHATSAPP */
 
 
 .whatsapp{
 
 position:fixed;
 
-bottom:20px;
+right:25px;
 
-right:20px;
+bottom:25px;
 
-background:#25D366;
+background:#25d366;
 
 color:white;
 
-padding:16px 22px;
+padding:15px 25px;
 
-border-radius:50px;
+border-radius:40px;
 
 text-decoration:none;
 
 font-weight:600;
 
-z-index:999;
+z-index:1000;
 
 }
 
 
 
-footer{
-
-background:#003b5c;
-
-color:white;
-
-text-align:center;
-
-padding:30px;
-
-}
+/* RESPONSIVE */
 
 
-
-@keyframes fadeIn{
-
-from{
-
-opacity:0;
-
-transform:translateY(40px);
-
-}
-
-to{
-
-opacity:1;
-
-transform:none;
-
-}
-
-}
-
-
-
-@media(max-width:768px){
-
-.hero h1{
-
-font-size:42px;
-
-}
+@media(max-width:900px){
 
 
 .menu{
@@ -524,11 +517,19 @@ display:none;
 }
 
 
-.contact{
+.hero h1{
 
-grid-template-columns:1fr;
+font-size:42px;
 
 }
+
+
+.hero p{
+
+font-size:18px;
+
+}
+
 
 }
 
@@ -536,10 +537,12 @@ grid-template-columns:1fr;
 </style>
 
 </head>
-
-
 <body>
 
+
+<!-- =====================
+        HEADER
+===================== -->
 
 <header>
 
@@ -548,55 +551,58 @@ grid-template-columns:1fr;
 
 <div class="logo">
 
-
-<img src="logo-ocean-group.png">
-
+<img src="images/logo.png">
 
 <span>
-
 OCEAN GROUP COMPANY S.A.C.
-
 </span>
-
 
 </div>
 
 
 
-<div class="menu">
-
+<nav class="menu">
 
 <a href="#inicio">Inicio</a>
 
+<a href="#nosotros">Nosotros</a>
+
 <a href="#servicios">Servicios</a>
 
-<a href="#galeria">Galería</a>
+<a href="#productos">Productos</a>
+
+<a href="#mercados">Mercados</a>
 
 <a href="#contacto">Contacto</a>
 
 
 
-<select class="language-select">
+<select class="lang">
 
-<option>ES</option>
+<option>🇵🇪 ES</option>
 
-<option>EN</option>
+<option>🇺🇸 EN</option>
 
-<option>中文</option>
+<option>🇨🇳 中文</option>
 
-<option>日本語</option>
+<option>🇯🇵 日本語</option>
 
 </select>
 
 
-</div>
+</nav>
 
 
 </div>
-
 
 </header>
 
+
+
+
+<!-- =====================
+        HERO
+===================== -->
 
 
 <section class="hero" id="inicio">
@@ -607,21 +613,33 @@ OCEAN GROUP COMPANY S.A.C.
 
 <h1>
 
-CONECTAMOS PERÚ CON EL MUNDO
+CONECTAMOS PERÚ CON LOS MERCADOS DEL MUNDO
 
 </h1>
 
 
+
 <p>
 
-Exportación de productos hidrobiológicos, logística internacional y comercio exterior.
+Exportación de productos hidrobiológicos peruanos, logística internacional y soluciones globales de comercio exterior.
 
 </p>
 
 
-<a href="https://wa.me/51979540176" class="btn">
+
+<div class="buttons">
+
+
+<a href="#contacto" class="btn">
 
 Solicitar Cotización
+
+</a>
+
+
+<a href="#mercados" class="btn btn-outline">
+
+Nuestros Mercados
 
 </a>
 
@@ -629,8 +647,128 @@ Solicitar Cotización
 </div>
 
 
+</div>
+
+
 </section>
 
+
+
+
+<!-- =====================
+       NOSOTROS
+===================== -->
+
+
+<section class="section" id="nosotros">
+
+
+<div class="container">
+
+
+<h2 class="title">
+
+Sobre Nosotros
+
+</h2>
+
+
+
+<p class="subtitle">
+
+
+Somos una empresa peruana especializada en exportación de productos hidrobiológicos y comercio internacional.
+
+Trabajamos conectando proveedores peruanos con compradores internacionales mediante procesos seguros, eficientes y responsables.
+
+
+</p>
+
+
+
+<br><br>
+
+
+
+<div class="grid">
+
+
+<div class="card">
+
+<h3>
+
+🌊 Experiencia
+
+</h3>
+
+
+<p>
+
+Conocimiento del mercado pesquero peruano y operaciones internacionales.
+
+</p>
+
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+
+🚢 Logística Internacional
+
+</h3>
+
+
+<p>
+
+Coordinamos transporte marítimo, documentación y cadena logística.
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>
+
+✅ Calidad
+
+</h3>
+
+
+<p>
+
+Compromiso con estándares internacionales para nuestros clientes.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- =====================
+       SERVICIOS
+===================== -->
 
 
 <section class="section" id="servicios">
@@ -639,7 +777,7 @@ Solicitar Cotización
 <div class="container">
 
 
-<h2 class="section-title">
+<h2 class="title">
 
 Nuestros Servicios
 
@@ -647,16 +785,75 @@ Nuestros Servicios
 
 
 
-<div class="services">
+<div class="grid">
 
 
 <div class="card">
 
-<h3>Transporte Marítimo</h3>
+<h3>
+
+🚢 Transporte Marítimo
+
+</h3>
 
 <p>
 
-Soluciones eficientes para exportaciones internacionales.
+Gestión de embarques internacionales desde Perú hacia diferentes destinos.
+
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+
+📦 Exportación FCL / LCL
+
+</h3>
+
+<p>
+
+Soluciones para cargas completas y consolidadas.
+
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+
+📝 Gestión Aduanera
+
+</h3>
+
+<p>
+
+Documentación y procesos necesarios para comercio exterior.
+
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>
+
+🌎 Comercio Internacional
+
+</h3>
+
+<p>
+
+Desarrollo de mercados y conexión con compradores globales.
 
 </p>
 
@@ -665,44 +862,42 @@ Soluciones eficientes para exportaciones internacionales.
 
 <div class="card">
 
-<h3>Consolidación FCL / LCL</h3>
+<h3>
+
+❄️ Productos Congelados
+
+</h3>
 
 <p>
 
-Optimización logística para cargas completas y consolidadas.
+Manejo especializado de productos hidrobiológicos.
 
 </p>
 
 </div>
+
 
 
 <div class="card">
 
-<h3>Gestión Aduanera</h3>
+<h3>
+
+📍 Seguimiento Logístico
+
+</h3>
 
 <p>
 
-Documentación y cumplimiento normativo internacional.
+Control del proceso hasta la llegada al destino final.
 
 </p>
 
 </div>
 
 
-<div class="card">
-
-<h3>Productos Hidrobiológicos</h3>
-
-<p>
-
-Exportación de productos pesqueros peruanos.
-
-</p>
 
 </div>
 
-
-</div>
 
 </div>
 
@@ -711,87 +906,509 @@ Exportación de productos pesqueros peruanos.
 
 
 
-<section class="section stats">
+
+
+
+<!-- =====================
+       PRODUCTOS
+===================== -->
+
+
+<section class="section" id="productos">
 
 
 <div class="container">
 
 
-<div class="stats-grid">
+<h2 class="title">
+
+Productos Hidrobiológicos
+
+</h2>
 
 
-<div>
 
-<div class="stat-number">
+<div class="grid">
+
+
+<div class="card">
+
+<h3>
+
+🦑 Pota Peruana
+
+</h3>
+
+
+<p>
+
+Producto hidrobiológico peruano con alta demanda internacional.
+
+</p>
+
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+
+🐟 Productos Pesqueros
+
+</h3>
+
+
+<p>
+
+Exportación de productos seleccionados para mercados internacionales.
+
+</p>
+
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+
+❄️ Productos Congelados
+
+</h3>
+
+
+<p>
+
+Conservación adecuada para mantener calidad durante el transporte.
+
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+<!-- =====================
+       PROCESO
+===================== -->
+
+
+<section class="section">
+
+
+<div class="container">
+
+
+<h2 class="title">
+
+Nuestro Proceso de Exportación
+
+</h2>
+
+
+
+<div class="grid">
+
+
+<div class="card">
+
+<h3>1️⃣ Abastecimiento</h3>
+
+<p>
+
+Selección de productos y proveedores.
+
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>2️⃣ Control de Calidad</h3>
+
+<p>
+
+Verificación del producto antes del embarque.
+
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>3️⃣ Preparación</h3>
+
+<p>
+
+Empaque y documentación internacional.
+
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>4️⃣ Embarque</h3>
+
+<p>
+
+Transporte marítimo hacia mercados globales.
+
+</p>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+<!-- =====================
+       MERCADOS INTERNACIONALES
+===================== -->
+
+
+<section class="section" id="mercados">
+
+
+<div class="container">
+
+
+<h2 class="title">
+
+Mercados Internacionales
+
+</h2>
+
+
+
+<p class="subtitle">
+
+Conectamos productos hidrobiológicos peruanos con compradores de diferentes regiones del mundo.
+
+</p>
+
+
+<br><br>
+
+
+
+<div class="grid">
+
+
+
+<div class="card flag-card">
+
+<img src="https://flagcdn.com/w160/kr.png">
+
+<h3>
+
+🇰🇷 Corea del Sur
+
+</h3>
+
+
+<p>
+
+Mercado estratégico para productos pesqueros peruanos.
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="card flag-card">
+
+
+<img src="https://flagcdn.com/w160/jp.png">
+
+
+<h3>
+
+🇯🇵 Japón
+
+</h3>
+
+
+<p>
+
+Clientes que valoran calidad y trazabilidad.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="card flag-card">
+
+
+<img src="https://flagcdn.com/w160/cn.png">
+
+
+<h3>
+
+🇨🇳 China
+
+</h3>
+
+
+<p>
+
+Uno de los mercados asiáticos más importantes.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="card flag-card">
+
+
+<img src="https://flagcdn.com/w160/us.png">
+
+
+<h3>
+
+🇺🇸 Estados Unidos
+
+</h3>
+
+
+<p>
+
+Distribución internacional y comercio sostenible.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="card flag-card">
+
+
+<img src="https://flagcdn.com/w160/de.png">
+
+
+<h3>
+
+🇪🇺 Europa
+
+</h3>
+
+
+<p>
+
+Mercados con altos estándares de importación.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="card flag-card">
+
+
+<img src="https://flagcdn.com/w160/cl.png">
+
+
+<h3>
+
+🇨🇱 Latinoamérica
+
+</h3>
+
+
+<p>
+
+Expansión regional y nuevas oportunidades comerciales.
+
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- =====================
+          MAPA GLOBAL
+===================== -->
+
+
+<section class="section">
+
+
+<div class="container">
+
+
+<h2 class="title">
+
+Perú Conectado al Mundo
+
+</h2>
+
+
+
+
+<div class="map-container">
+
+
+<img src="images/mapa-exportacion.png"
+
+alt="Mapa de exportaciones internacionales">
+
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- =====================
+       ESTADÍSTICAS
+===================== -->
+
+
+<section class="section" style="background:#003b5c;color:white;">
+
+
+
+<div class="container">
+
+
+<div class="grid">
+
+
+
+<div class="card" style="text-align:center;">
+
+
+<h2 style="font-size:45px;color:#00b4d8;">
 
 20+
 
-</div>
+</h2>
+
 
 <p>
 
-Países Atendidos
+Países atendidos
 
 </p>
+
 
 </div>
 
 
 
-<div>
 
-<div class="stat-number">
+<div class="card" style="text-align:center;">
+
+
+<h2 style="font-size:45px;color:#00b4d8;">
 
 500+
 
-</div>
+</h2>
+
 
 <p>
 
-Embarques Realizados
+Embarques realizados
 
 </p>
 
-</div>
-
-
-
-<div>
-
-<div class="stat-number">
-
-100+
-
-</div>
-
-<p>
-
-Clientes Satisfechos
-
-</p>
 
 </div>
 
 
 
-<div>
 
-<div class="stat-number">
+<div class="card" style="text-align:center;">
+
+
+<h2 style="font-size:45px;color:#00b4d8;">
 
 100%
 
-</div>
+</h2>
+
 
 <p>
 
-Compromiso
+Compromiso logístico
 
 </p>
 
+
 </div>
 
 
+
 </div>
+
 
 
 </div>
@@ -801,13 +1418,21 @@ Compromiso
 
 
 
-<section class="section" id="galeria">
+
+
+
+<!-- =====================
+          GALERÍA
+===================== -->
+
+
+<section class="section">
 
 
 <div class="container">
 
 
-<h2 class="section-title">
+<h2 class="title">
 
 Galería Corporativa
 
@@ -815,16 +1440,69 @@ Galería Corporativa
 
 
 
-<div class="gallery">
+<div class="grid">
 
 
-<img src="https://images.unsplash.com/photo-1494412651409-8963ce7935a7?auto=format&fit=crop&w=1200&q=80">
+<div class="card">
+
+<img src="images/pota.jpg"
+
+style="width:100%;border-radius:15px;">
 
 
-<img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1200&q=80">
+<h3>
+
+Productos Hidrobiológicos
+
+</h3>
 
 
-<img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80">
+</div>
+
+
+
+
+
+<div class="card">
+
+
+<img src="images/barco.jpg"
+
+style="width:100%;border-radius:15px;">
+
+
+<h3>
+
+Transporte Marítimo
+
+</h3>
+
+
+</div>
+
+
+
+
+
+
+<div class="card">
+
+
+<img src="images/contenedores.jpg"
+
+style="width:100%;border-radius:15px;">
+
+
+<h3>
+
+Logística Internacional
+
+</h3>
+
+
+</div>
+
+
 
 
 </div>
@@ -835,6 +1513,111 @@ Galería Corporativa
 
 </section>
 
+
+
+
+
+
+
+
+<!-- =====================
+       CONFIANZA
+===================== -->
+
+
+<section class="section">
+
+
+<div class="container">
+
+
+<h2 class="title">
+
+¿Por qué elegirnos?
+
+</h2>
+
+
+
+<div class="grid">
+
+
+<div class="card">
+
+
+<h3>
+
+🌎 Conexión Global
+
+</h3>
+
+
+<p>
+
+Acceso a mercados internacionales mediante una cadena logística eficiente.
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+🤝 Atención Personalizada
+
+</h3>
+
+
+<p>
+
+Acompañamiento durante todo el proceso de exportación.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+📈 Crecimiento Sostenible
+
+</h3>
+
+
+<p>
+
+Construimos relaciones comerciales de largo plazo.
+
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+<!-- =====================
+        CONTACTO
+===================== -->
 
 
 <section class="section" id="contacto">
@@ -843,12 +1626,18 @@ Galería Corporativa
 <div class="container">
 
 
-<h2 class="section-title">
+<h2 class="title">
 
 Contáctanos
 
 </h2>
 
+
+
+<div class="grid">
+
+
+<div class="card">
 
 
 <h3>
@@ -863,28 +1652,47 @@ OCEAN GROUP COMPANY S.A.C.
 
 <p>
 
-<strong>RUC:</strong> 20613033328
+📍 Sullana - Piura - Perú
 
 </p>
 
 
+<br>
+
+
 <p>
 
-<strong>WhatsApp:</strong> +51 979 540 176
+📄 RUC: 20613033328
 
 </p>
 
 
+<br>
+
+
 <p>
 
-<strong>Email:</strong> gerencia@oceangroupsac.com
+📱 WhatsApp: +51 979 540 176
 
 </p>
 
 
+<br>
+
+
 <p>
 
-<strong>Ubicación:</strong> Sullana - Piura - Perú
+✉️ gerencia@oceangroupsac.com
+
+</p>
+
+
+<br>
+
+
+<p>
+
+✉️ operaciones@oceangroupsac.com
 
 </p>
 
@@ -893,8 +1701,104 @@ OCEAN GROUP COMPANY S.A.C.
 </div>
 
 
+
+
+
+<div class="card">
+
+
+<h3>
+
+Solicitar Cotización
+
+</h3>
+
+
+<br>
+
+
+
+<form>
+
+
+<input
+
+type="text"
+
+placeholder="Nombre"
+
+style="width:100%;padding:15px;margin-bottom:15px;border-radius:8px;border:1px solid #ccc;">
+
+
+
+<input
+
+type="email"
+
+placeholder="Correo electrónico"
+
+style="width:100%;padding:15px;margin-bottom:15px;border-radius:8px;border:1px solid #ccc;">
+
+
+
+<input
+
+type="text"
+
+placeholder="Empresa"
+
+style="width:100%;padding:15px;margin-bottom:15px;border-radius:8px;border:1px solid #ccc;">
+
+
+
+<textarea
+
+placeholder="Mensaje"
+
+rows="5"
+
+style="width:100%;padding:15px;border-radius:8px;border:1px solid #ccc;">
+
+</textarea>
+
+
+
+<br><br>
+
+
+
+<button class="btn" type="submit">
+
+Enviar Consulta
+
+</button>
+
+
+
+</form>
+
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
 </section>
 
+
+
+
+
+
+
+<!-- =====================
+          FOOTER
+===================== -->
 
 
 <footer>
@@ -905,6 +1809,9 @@ OCEAN GROUP COMPANY S.A.C.
 © 2026 OCEAN GROUP COMPANY S.A.C.
 
 </p>
+
+
+<br>
 
 
 <p>
@@ -918,6 +1825,14 @@ Connecting Peru To Global Markets
 
 
 
+
+
+
+<!-- =====================
+       WHATSAPP
+===================== -->
+
+
 <a class="whatsapp"
 
 href="https://wa.me/51979540176"
@@ -927,6 +1842,199 @@ target="_blank">
 WhatsApp
 
 </a>
+
+
+
+
+
+
+<!-- =====================
+       TRADUCCIONES
+===================== -->
+
+
+<script>
+
+
+const language = document.querySelector(".lang");
+
+
+
+const texts = {
+
+
+es:{
+
+
+inicio:"Inicio",
+
+nosotros:"Nosotros",
+
+servicios:"Servicios",
+
+productos:"Productos",
+
+mercados:"Mercados",
+
+contacto:"Contacto",
+
+
+hero:
+
+"CONECTAMOS PERÚ CON LOS MERCADOS DEL MUNDO",
+
+
+description:
+
+"Exportación de productos hidrobiológicos peruanos, logística internacional y comercio exterior."
+
+
+},
+
+
+
+
+en:{
+
+
+inicio:"Home",
+
+nosotros:"About Us",
+
+servicios:"Services",
+
+productos:"Products",
+
+mercados:"Markets",
+
+contacto:"Contact",
+
+
+hero:
+
+"CONNECTING PERU WITH GLOBAL MARKETS",
+
+
+description:
+
+"Peruvian seafood exports, international logistics and global trade solutions."
+
+
+},
+
+
+
+
+
+zh:{
+
+
+inicio:"首页",
+
+nosotros:"关于我们",
+
+servicios:"服务",
+
+productos:"产品",
+
+mercados:"市场",
+
+contacto:"联系我们",
+
+
+hero:
+
+"连接秘鲁与世界市场",
+
+
+description:
+
+"秘鲁水产品出口、国际物流和全球贸易解决方案。"
+
+
+},
+
+
+
+
+
+ja:{
+
+
+inicio:"ホーム",
+
+nosotros:"会社概要",
+
+servicios:"サービス",
+
+productos:"製品",
+
+mercados:"市場",
+
+contacto:"お問い合わせ",
+
+
+hero:
+
+"ペルーと世界市場をつなぐ",
+
+
+description:
+
+"ペルー水産物輸出、国際物流、貿易サービス。"
+
+
+}
+
+
+};
+
+
+
+
+
+language.addEventListener("change",()=>{
+
+
+let value=language.value;
+
+
+
+let data=texts[value];
+
+
+
+if(!data) return;
+
+
+
+
+document.querySelector('a[href="#inicio"]').innerHTML=data.inicio;
+
+document.querySelector('a[href="#nosotros"]').innerHTML=data.nosotros;
+
+document.querySelector('a[href="#servicios"]').innerHTML=data.servicios;
+
+document.querySelector('a[href="#productos"]').innerHTML=data.productos;
+
+document.querySelector('a[href="#mercados"]').innerHTML=data.mercados;
+
+document.querySelector('a[href="#contacto"]').innerHTML=data.contacto;
+
+
+
+document.querySelector(".hero h1").innerHTML=data.hero;
+
+
+document.querySelector(".hero p").innerHTML=data.description;
+
+
+
+});
+
+
+
+</script>
 
 
 
